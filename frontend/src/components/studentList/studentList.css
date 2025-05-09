@@ -1,0 +1,193 @@
+/* Wrapper for the whole list */
+.table-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.student-list-wrapper {
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+}
+
+/* Container for the filter dropdown */
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+/* Dropdown Styling */
+.filter-dropdown {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.filter-dropdown:hover,
+.filter-dropdown:focus {
+    border-color: #b7afa3;
+    outline: none;
+}
+
+/* Table container with scroll */
+.student-list-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 8px;
+    /* margin-bottom: 20px; */
+}
+
+/* Header Row Styling */
+.student-table th {
+    padding: 12px;
+    background-color: #4D55CC;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Data Rows Styling */
+.student-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.student-table tr:hover {
+    background-color: #D9EAFD;
+    cursor: pointer;
+}
+
+/* Footer row styling if needed */
+.student-table tfoot tr {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.filter-search-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.search-input {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.loading-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.no-data-message {
+  margin-top: 40px;
+  padding: 16px;
+  font-size: 18px;
+  color: #555;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.page-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.page-button:hover {
+  background-color: #dfe3ff;
+  color: #211C84;
+}
+
+.page-button.active {
+  background-color: #211C84;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Adjust filter dropdown width for smaller screens */
+    .filter-dropdown {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    /* Enable horizontal scroll for table on small screens */
+    .student-list-container {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    .student-table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-list-wrapper {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    /* Adjust filter dropdown width even further on very small screens */
+    .filter-dropdown {
+        width: 50%;
+    }
+
+    .search-input {
+        width: 50%;
+        padding: 10px;
+        font-size: 12px;
+    }
+}
