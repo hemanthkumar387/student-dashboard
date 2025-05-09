@@ -10,4 +10,4 @@
    const app = initializeApp(firebaseConfig);
    export const auth = getAuth(app);
 
-   // for security i have removed my key and all other
+   // For security I have removed my KEY and All Other
