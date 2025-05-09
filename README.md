@@ -29,7 +29,7 @@ A full-stack web application built with **React** and **Firebase Authentication*
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 /src
 ├── components
 │   ├── Login/
@@ -40,29 +40,29 @@ A full-stack web application built with **React** and **Firebase Authentication*
 ├── App.js
 ├── App.css
 └── firebase.js
-\`\`\`
+```
 
 ---
 
 ## 🔧 Setup Instructions
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/hemanthkumar387/student-dashboard.git
    cd student-dashboard
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Configure Firebase**
    - Create a Firebase project at [firebase.google.com](https://firebase.google.com/)
    - Enable **Email/Password** authentication
    - Replace the config in \`firebase.js\` with your Firebase credentials:
 
-   \`\`\`js
+   ```js
    // src/firebase.js
    import { initializeApp } from "firebase/app";
    import { getAuth } from "firebase/auth";
@@ -76,12 +76,12 @@ A full-stack web application built with **React** and **Firebase Authentication*
 
    const app = initializeApp(firebaseConfig);
    export const auth = getAuth(app);
-   \`\`\`
+   ```
 
 4. **Run the development server**
-   \`\`\`bash
+   ```bash
    node index.js
-   \`\`\`
+   ```
 
 5. **Backend Setup** (Optional)  
    Ensure a local server is running at \`http://localhost:5000/students\` or modify the fetch URL accordingly.
