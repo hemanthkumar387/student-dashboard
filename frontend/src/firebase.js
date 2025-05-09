@@ -9,3 +9,5 @@
 
    const app = initializeApp(firebaseConfig);
    export const auth = getAuth(app);
+
+   // for security i have removed my key and all other
